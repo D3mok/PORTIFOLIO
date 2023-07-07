@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+/*fontes  font-family: 'Krona One', sans-serif;/
+/fontes   font-family: 'Montserrat', sans-serif;*/
+
+body{
+    background-color: #deeef0;
+    color: black;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    padding: 4% 0% 0% 15%;
+}
+
+.cabecalhoMenu{
+  display: flex;
+  gap: 80px;
+}
+
+.cabecalhoMenuLink{
+    font: size 1.06rem;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    border: nones;
+    padding: 1em 3em;
+    border-radius: 23px;
+    color: #161616;
+    text-transform: uppercase;
+    position: relative;
+    transition: 5s ease;
+    text-decoration: none;
+    border-radius: 23px;
+  }
+  
+  .cabecalhoMenuLink::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #9693c7;
+    transition: .5s ease;
+    border-radius: 23px;
+
+  }
+  
+  .cabecalhoMenuLink:hover {
+    color: #1e1e2b;
+    transition-delay: .5s;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #868686,-20px -20px 60px #ffffff;
+    border-radius: 23px;
+  }
+  
+  .cabecalhoMenuLink:hover::before {
+    width: 100%;
+    border-radius: 23px;
+  }
+  
+  .cabecalhoMenuLink::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #9693c7;
+    transition: .4s ease;
+    z-index: -1;
+    border-radius: 23px;
+  }
+  
+  .cabecalhoMenuLink:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+    border-radius: 23px;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tituloDestaque{
+    color: #9693c7;
+    
+}
+
+h1{
+    font-weight: bold;
+}
+/* edicao html main */
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 15%;
+    gap: 42px;
+}
+/* conteudo geral */
+ .apresentacaoConteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+ }
+/* texto titulo pagina principal */
+.apresentacaoTitulo{
+    font-size: 2.25rem; 
+    font-family: 'Krona One', sans-serif;
+    
+}
+/* edicao do texto html p, pagina principal */
+.apresentacaoTexto{
+    font-size: 1.5rem ;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+/* ink botoes */
+.linkBotoes{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+/* links dos botoes texto */
+.linksBotoesParagrafo{
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 50%;
+}
+/* edicao botao texto */
+.botoesTexto{
+ display: flex;
+ justify-content: center;
+ gap: 16px;
+ border: 3px solid #9693c7; 
+ width: 50%;
+ text-align: center;
+ border-radius: 8px;
+ padding: 21.6px 0;
+ text-decoration: none;
+ font-size:1.5rem;
+ font-weight: 500;
+ color: black;
+ font-family: 'Krona One', sans-serif;
+ transition: 0.5s ease;
+ align-items: center;
+}
+/* animacao botoes pagina principal ao mose */
+.botoesTexto:hover{
+    border: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #161616;
+    color: #9693c7;
+    transition: 1s;
+    transition-delay: 1s ease;
+    transform: scale(1.01);
+    align-items: center;
+
+}
+
+.ImagemGarota{
+    width: 50%;
+}
+
+/* edicao rodape*/
+.rodape{
+  padding: 24px;
+  background-color: #9693c7;
+  text-align: center;
+  color: #161616;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transform: scale(2px);
+  transition: 1s ease;
+}
+
+/* animacao do rodape ao mose */
+.rodape:hover{
+ text-align: center;
+ transform: scale(2px) 2s;
+ background-color: #161616;
+ border: 2px  #9693c7;
+ border-radius: 10px;
+ color: #9693c7;
+ transition-delay: 1s ease;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.rodapeTexto:hover, .rodapeTexto:focus{
+ transition: 0.5s;
+ text-align: center;
+ padding: 12px;
+ border: 10px #9693c7;
+ border-radius: 10px;
+ animation-delay: 1s;
+ animation: pulse1 3s infinite;
+ transform: transform 2s;
+ color:#9693c7; 
+ transition-delay: 1s ease;
+ background-color: rgba(68, 53, 53, 0.09);
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@keyframes pulse1{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+                        /* informacoes pagina 2  */
+
+
+/*fontes  font-family: 'Krona One', sans-serif;/
+/*fontes   font-family: 'Montserrat', sans-serif;*/
+
+
+
+
+.conteudoGeralPagina2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 15%;
+    gap: 6%;
+}
+
+.conteudoPagina2{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border-radius: 38px;
+    border-radius: 18px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #eeffff, #c8d6d8);
+    box-shadow:  22px 22px 45px #879192, -22px -22px 45px #ffffff;
+}
+
+
+
+.tituloPagina2{
+    font-family: 'Krona One', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.textoPagina2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+.olhos{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.tituloPagina2:hover + .olhos{
+    opacity: 1;
+    color: #9693c7;
+}
+
+
+@media (max-width:1400px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalhoMenu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    .apresentacaoConteudo{
+        width: auto;
+    }
+}
